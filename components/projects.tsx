@@ -1,6 +1,7 @@
 import React from 'react'
 import SectionHeading from './SectionHeading'
 import { projectsData } from '@/lib/data'
+import Image from 'next/image'
 
 export default function Projects() {
   return (
@@ -29,6 +30,7 @@ function Project({ title, description, imageUrl, tags }: ProjectProps) {
           <li key={index}>{tag}</li>
         ))}
       </ul>
+      <Image src={imageUrl} alt='projects' quality={95} />
     </section>
   )
 }
