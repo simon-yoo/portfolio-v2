@@ -62,22 +62,22 @@ export default function Intro() {
       >
         <Link
           href='#contact'
-          className='bg-stone-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-stone-400 hover:text-stone-900 active:scale-105 transition'
+          className='bg-stone-700 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-stone-400 hover:text-stone-900 active:scale-105 transition'
         >
-          Contact me <BsArrowRight />
+          Contact me <BsArrowRight className='opacity-70' />
         </Link>
-        <a className='bg-stone-500 text-white px-7 py-3 flex items-center gap-2 rounded-full'>
-          ≈ Download CV <HiDownload />
+        <a className='bg-stone-500 text-white px-7 py-3 flex items-center gap-2 rounded-lg'>
+          Download CV <HiDownload />
         </a>
         <a
           href=''
-          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-full'
+          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-lg'
         >
           <BsLinkedin />
         </a>
         <a
           href=''
-          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-full text-[1.24rem]'
+          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-lg text-[1.24rem]'
         >
           <FaGithubSquare />
         </a>
