@@ -5,7 +5,7 @@ import { LuGraduationCap } from 'react-icons/lu'
 import wawo from '@/public/images/wa-wo.png'
 import aicompanion from '@/public/images/ai-companion.png'
 import messenger from '@/public/images/messenger.png'
-import worldgym from '@/public/images/world-gym.png'
+import worldgym from '@/public/images/worldgym.png'
 
 export const links = [
   {
