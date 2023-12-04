@@ -126,7 +126,7 @@ export const projectsData = [
     title: 'Word Gym',
     description:
       'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'TypeScript'],
+    tags: ['React', 'TypeScript', 'Css', 'HTML', 'EmailJS'],
     imageUrl: worldgym,
     link: 'https://gym-tau-nine.vercel.app/',
   },
