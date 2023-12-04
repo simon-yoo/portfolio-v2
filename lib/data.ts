@@ -36,59 +36,99 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: 'Graduated bootcamp',
-    location: 'Miami, FL',
-    description:
-      'I graduated after 6 months of studying. I immediately found a job as a front-end developer.',
-    icon: React.createElement(LuGraduationCap),
-    date: '2019',
-  },
-  {
-    title: 'Front-End Developer',
-    location: 'Orlando, FL',
-    description:
-      'I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.',
+    title: 'Freelancer, content creator, contractor',
+    location: 'New Market, Auckland',
+    description: `Moving on from the course from Dev Academy, I immersed myself into learning and exploring new Technologies, building and deploying quite a few full-stack projects, as well as contributing contents for some of the high-views youtube coding channels. Also currently a moderator of a React/Nextjs community with 10k+ members.`,
     icon: React.createElement(CgWorkAlt),
-    date: '2019 - 2021',
+    date: '09/2023 - Present',
   },
   {
-    title: 'Full-Stack Developer',
-    location: 'Houston, TX',
+    title: 'Full-stack Developer',
+    location: 'New Market, Auckland',
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: '2021 - present',
+      'I graduated from Level 6 in Applied Software Development course from Dev Academy Aotearoa. I gained practical experience through pair programming and weekly group projects. Also developed strong collaboration, communication, and problem solving skills. I have been equipped with technical skills and a commitment to lifelong learning for a successful apps&sites development career.',
+    icon: React.createElement(LuGraduationCap),
+    date: '06-09/2023',
+  },
+  {
+    title: 'Residential Painter',
+    location: 'Auckland, New Zealand',
+    description:
+      'I owned a small residential painting company for 1 year. I was responsible for painting the interior and exterior of houses. I was responsible for managing the team and ensuring the quality of the work.',
+    icon: React.createElement(CgWorkAlt),
+    date: '05/2022 - 06/2023',
+  },
+  {
+    title: 'Real Estate Agent',
+    location: 'Auckland, New Zealand',
+    description:
+      'Contract self-employed Real Estate Salesperson in a Top team of more than 2 years. I was responsible for selling properties and managing the customers with my knowledge and skills to achieve their needs and wants.',
+    icon: React.createElement(CgWorkAlt),
+    date: '05/2019 - 05/2022',
+  },
+  {
+    title: 'Carpenter',
+    location: 'Auckland, New Zealand',
+    description:
+      'I worked as a carpenter for more 2 years with wide range of experise on both residential and commercial projects.',
+    icon: React.createElement(CgWorkAlt),
+    date: '05/2016 - 05/2019',
   },
 ] as const
 
 export const projectsData = [
   {
-    title: 'CorpComment',
+    title: 'Wardrobe Wonders',
     description:
-      'I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.',
-    tags: ['React', 'Next.js', 'MongoDB', 'Tailwind', 'Prisma'],
+      'My final group project in Dev Academy. Your digital wardrobe !',
+    tags: ['React', 'PostgresSQL', 'Tailwind', 'Knex.js', 'Express.js'],
     imageUrl: wawo,
+    link: 'https://wardrobe-wonders.onrender.com',
   },
   {
-    title: 'rmtDev',
+    title: 'Ai-companion',
     description:
-      'Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.',
-    tags: ['React', 'TypeScript', 'Next.js', 'Tailwind', 'Redux'],
+      'A SaaS app where you can create your own custom AI companion and be able to interact with it.',
+    tags: [
+      'Next.js',
+      'React.js',
+      'ClerkAuth',
+      'Prisma',
+      'mysql',
+      'Tailwind',
+      'Stripe',
+      'Pinecone',
+      'OpenAI',
+    ],
     imageUrl: aicompanion,
+    link: 'https://saas-ai-companion-beta.vercel.app/',
   },
   {
-    title: 'Word Analytics',
+    title: 'Messenger App',
     description:
-      'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+      'A simple realtime messenger app inspired by facebook messenger.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind',
+      'MongoDB',
+      'Pusher',
+      'Prisma',
+      'Axios',
+      'Cloudinary',
+      'Auth0',
+    ],
     imageUrl: messenger,
+    link: 'https://msg-clone.vercel.app/',
   },
   {
-    title: 'Word Analytics',
+    title: 'Word Gym',
     description:
       'A public web app for quick analytics on text. It shows word count, character count and social media post limits.',
-    tags: ['React', 'Next.js', 'SQL', 'Tailwind', 'Framer'],
+    tags: ['React', 'TypeScript'],
     imageUrl: worldgym,
+    link: 'https://gym-tau-nine.vercel.app/',
   },
 ] as const
 
