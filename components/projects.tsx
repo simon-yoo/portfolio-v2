@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import SectionHeading from './SectionHeading'
 import { projectsData } from '@/lib/data'
 import Image from 'next/image'
+import { useScroll } from 'framer-motion'
 
 export default function Projects() {
   return (
@@ -21,8 +22,13 @@ export default function Projects() {
 type ProjectProps = (typeof projectsData)[number]
 
 function Project({ title, description, imageUrl, tags }: ProjectProps) {
+  const ref = useRef(null)
+  useScroll({
+    target: '',
+    offset: ['0 1', '1.33 1'],
+  })
   return (
-    <section className='group bg-stone-400 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-10 hover:bg-stone-600 transition'>
+    <section className='group rounded-md bg-stone-400 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] mb-3 sm:mb-8 last:mb-0 even:pl-10 hover:bg-stone-600 transition'>
       <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]'>
         <h3 className='text-2xl font-semibold group-hover:text-stone-300 transition'>
           {title}
