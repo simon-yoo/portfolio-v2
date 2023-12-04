@@ -3,6 +3,10 @@
 import Image from 'next/image'
 import React from 'react'
 import { motion } from 'framer-motion'
+import Link from 'next/link'
+import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
+import { HiDownload } from 'react-icons/hi'
+import { FaGithubSquare } from 'react-icons/fa'
 
 export default function Intro() {
   return (
@@ -49,6 +53,35 @@ export default function Intro() {
         building <span className='italic'>sites & apps.</span> My focus is{' '}
         <span className='underline'>React (Next.js)</span>
       </motion.p>
+
+      <motion.div
+        className='flex flex-col sm:flex-row items-center justify-center gap-2 px-4 py-6 text-lg'
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1 }}
+      >
+        <Link
+          href='#contact'
+          className='bg-stone-700 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-stone-400 hover:text-stone-900 active:scale-105 transition'
+        >
+          Contact me <BsArrowRight />
+        </Link>
+        <a className='bg-stone-500 text-white px-7 py-3 flex items-center gap-2 rounded-full'>
+          ≈ Download CV <HiDownload />
+        </a>
+        <a
+          href=''
+          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-full'
+        >
+          <BsLinkedin />
+        </a>
+        <a
+          href=''
+          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-full text-[1.24rem]'
+        >
+          <FaGithubSquare />
+        </a>
+      </motion.div>
     </section>
   )
 }
