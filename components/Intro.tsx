@@ -62,19 +62,24 @@ export default function Intro() {
       >
         <Link
           href='#contact'
-          className='bg-stone-700 text-white px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-stone-400 hover:text-stone-900 active:scale-105 transition'
+          className='group bg-stone-700 text-stone-100 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:bg-stone-500  active:scale-105 transition'
         >
-          Contact me <BsArrowRight className='opacity-70' />
+          Contact me{' '}
+          <BsArrowRight className='opacity-70 group-hover:translate-x-2 transition group-hover:text-stone-900' />
         </Link>
-        <a className='bg-stone-500 text-white px-7 py-3 flex items-center gap-2 rounded-lg'>
-          Download CV <HiDownload />
+
+        <a className='group bg-stone-500 text-stone-100 px-7 py-3 flex items-center gap-2 rounded-lg cursor-pointer focus:scale-110 hover:scale-110 hover:bg-stone-700  active:scale-105 transition'>
+          Download CV{' '}
+          <HiDownload className='opacity-60 group-hover:translate-y-1 transition ' />
         </a>
+
         <a
           href=''
-          className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-lg'
+          className='group bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-lg'
         >
-          <BsLinkedin />
+          <BsLinkedin className='' />
         </a>
+
         <a
           href=''
           className='bg-stone-200 text-stone-900 p-4 flex items-center gap-2 rounded-lg text-[1.24rem]'
