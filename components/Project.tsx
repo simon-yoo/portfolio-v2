@@ -26,10 +26,10 @@ export default function Project({
     <motion.div
       style={{ scale: scaleProgress, opacity: opacityProgress }}
       ref={ref}
-      className='mb-3 sm:mb-8 last:mb-0'
+      className='group mb-3 sm:mb-8 last:mb-0'
     >
-      <section className='group rounded-md bg-stone-400 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]  even:pl-10 hover:bg-stone-600 transition'>
-        <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[18rem]'>
+      <section className=' rounded-md bg-stone-400 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem]  even:pl-10 hover:bg-stone-600 transition'>
+        <div className='pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-10 sm:max-w-[50%] flex flex-col h-full group-even:ml-[20rem]'>
           <h3 className='text-2xl font-semibold group-hover:text-stone-300 transition'>
             {title}
           </h3>
