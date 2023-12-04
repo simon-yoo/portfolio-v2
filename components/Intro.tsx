@@ -1,5 +1,21 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function Intro() {
-  return <div>Intro</div>
+  return (
+    <section>
+      <div className='flex items-center justify-center'>
+        <div>
+          <Image
+            src='/images/simon.jpeg'
+            width='192'
+            height='192'
+            alt='profile'
+            quality='95'
+            priority={true}
+          />
+        </div>
+      </div>
+    </section>
+  )
 }
