@@ -10,7 +10,7 @@ import { FaGithubSquare } from 'react-icons/fa'
 
 export default function Intro() {
   return (
-    <section className='mb-28 max-w-[50rem]'>
+    <section className='mb-22 max-w-[50rem]'>
       <div className='flex items-center justify-center'>
         <div className='relative'>
           <motion.div
@@ -76,22 +76,23 @@ export default function Intro() {
           Download CV{' '}
           <HiDownload className='opacity-70 group-hover:translate-y-1 transition ' />
         </a>
+        <div className='flex gap-1 sm:gap-2'>
+          <a
+            href='https://www.linkedin.com/in/simon-yoo-12b078183/'
+            target='_blank'
+            className='group bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg border-stone/10 focus:scale-[1.15] hover:scale-[1.15] hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200  active:scale-105 transition'
+          >
+            <BsLinkedin className='' />
+          </a>
 
-        <a
-          href='https://www.linkedin.com/in/simon-yoo-12b078183/'
-          target='_blank'
-          className='group bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg border-stone/10 focus:scale-[1.15] hover:scale-[1.15] hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200  active:scale-105 transition'
-        >
-          <BsLinkedin className='' />
-        </a>
-
-        <a
-          href='https://github.com/simon-yoo'
-          target='_blank'
-          className='bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg text-[1.24rem] border-stone/10 focus:scale-[1.15] hover:scale-110 hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200 active:scale-105  transition'
-        >
-          <FaGithubSquare />
-        </a>
+          <a
+            href='https://github.com/simon-yoo'
+            target='_blank'
+            className='bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg text-[1.24rem] border-stone/10 focus:scale-[1.15] hover:scale-110 hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200 active:scale-105  transition'
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   )
