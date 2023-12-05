@@ -1,15 +1,12 @@
 'use client'
 
-import React, { useContext } from 'react'
+import React from 'react'
 import { motion } from 'framer-motion'
 import { links } from '@/lib/data'
 import Link from 'next/link'
 import clsx from 'clsx'
-import { ActiveSectionContext } from '@/context/active-section-context'
 
 export default function Header() {
-  useContext(ActiveSectionContext)
-
   return (
     <header className='z-[999] relative'>
       <motion.div
