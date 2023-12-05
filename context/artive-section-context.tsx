@@ -1,6 +1,13 @@
 import React, { useState } from 'react'
+import { links } from '@/lib/data'
 
-export default function ArtiveSectionContext() {
-  const [activeSection, setActiveSection] = useState('Home')
-  return <div>ArtiveSectionContext</div>
+type SectionName = (typeof links)[number]['name']
+
+type ActiveSectionContextProviderProps = { children: React.ReactNode }
+
+export default function ArtiveSectionContextProvider({
+  children,
+}: ActiveSectionContextProviderProps) {
+  const [activeSection, setActiveSection] = useState<SectionName>('Home')
+  return children
 }
