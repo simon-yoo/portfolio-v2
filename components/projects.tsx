@@ -1,9 +1,22 @@
-import React from 'react'
+'use client'
+
+import React, { useEffect } from 'react'
 import SectionHeading from './SectionHeading'
 import { projectsData } from '@/lib/data'
 import Project from './Project'
+import { useInView } from 'react-intersection-observer'
+import { useActiveSectionContext } from '@/context/active-section-context'
 
 export default function Projects() {
+  const { ref, inView } = useInView()
+  const { setActiveSection } = useActiveSectionContext()
+
+  useEffect(() => {
+    if (inView) {
+      setActiveSection('About')
+    }
+  }, [inView, setActiveSection])
+
   return (
     <section id='projects' className=' scroll-mt-28'>
       <SectionHeading>My projects</SectionHeading>
