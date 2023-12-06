@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useEffect } from 'react'
+import React from 'react'
 import SectionHeading from './SectionHeading'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
