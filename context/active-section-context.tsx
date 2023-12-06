@@ -20,6 +20,7 @@ export const ActiveSectionContext =
 export default function ActiveSectionContextProvider({
   children,
 }: ActiveSectionContextProviderProps) {
+  // we need to keep track of this to disable the abserver temporarily when the user clicks on a link
   const [timeOfLastClick, setTimeOfLastClick] = useState(0)
   const [activeSection, setActiveSection] = useState<SectionName>('Home')
   return (
