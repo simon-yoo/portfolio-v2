@@ -69,7 +69,7 @@ export default function Intro() {
       >
         <Link
           href='#contact'
-          className='group bg-stone-700 text-stone-100 mx-1 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:rounded-2xl hover:bg-stone-200 hover:text-stone-600 hover:border-stone/10 active:scale-105 transition'
+          className='group shadow-2xl  bg-stone-700 text-stone-100 mx-1 px-7 py-3 flex items-center gap-2 rounded-lg outline-none focus:scale-110 hover:scale-110 hover:rounded-2xl hover:bg-stone-200 hover:text-stone-600 hover:border-stone/10 active:scale-105 transition'
         >
           Contact me{' '}
           <BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' />
@@ -78,7 +78,7 @@ export default function Intro() {
         <a
           href='/CV-Simon.pdf'
           download
-          className='group bg-stone-500 text-stone-100 mx-1 px-7 py-3 flex items-center gap-2 rounded-lg cursor-pointer focus:scale-110 hover:scale-110 hover:rounded-2xl hover:bg-stone-200 hover:text-stone-600 hover:border-stone/10  active:scale-105  transition'
+          className='group shadow-2xl bg-stone-500 text-stone-100 mx-1 px-7 py-3 flex items-center gap-2 rounded-lg cursor-pointer focus:scale-110 hover:scale-110 hover:rounded-2xl hover:bg-stone-200 hover:text-stone-600 hover:border-stone/10  active:scale-105  transition'
         >
           Download CV{' '}
           <HiDownload className='opacity-70 group-hover:translate-y-1 transition ' />
@@ -87,7 +87,7 @@ export default function Intro() {
           <a
             href='https://www.linkedin.com/in/simon-yoo-12b078183/'
             target='_blank'
-            className='group bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg border-stone/10 focus:scale-[1.15] hover:scale-[1.15] hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200  active:scale-105 transition'
+            className='group shadow-2xl bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg border-stone/10 focus:scale-[1.15] hover:scale-[1.15] hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200  active:scale-105 transition'
           >
             <BsLinkedin className='' />
           </a>
@@ -95,7 +95,7 @@ export default function Intro() {
           <a
             href='https://github.com/simon-yoo'
             target='_blank'
-            className='bg-stone-200 text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg text-[1.24rem] border-stone/10 focus:scale-[1.15] hover:scale-110 hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200 active:scale-105  transition'
+            className='group bg-stone-200 shadow-2xl text-stone-900 mx-1 p-4 flex items-center gap-2 rounded-lg text-[1.24rem] border-stone/10 focus:scale-[1.15] hover:scale-110 hover:rounded-2xl hover:bg-stone-600 hover:text-stone-200 active:scale-105  transition'
           >
             <FaGithubSquare />
           </a>
