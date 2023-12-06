@@ -13,7 +13,7 @@ export default function Skills() {
       className='mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40'
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className='flex flex-wrap justify-center text-lg gap-2 text-stone-600'>
+      <ul className='flex flex-wrap justify-center text-lg gap-4 mt-10 text-stone-600'>
         {skillsData.map((skill, index) => (
           <li
             className='bg-stone-200 border border-black/[0.1] rounded-md px-5 py-3 shadow-2xl'
