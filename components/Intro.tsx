@@ -8,7 +8,7 @@ import { BsArrowRight, BsLinkedin } from 'react-icons/bs'
 import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from 'react-icons/fa'
 import { useSectionInView } from '@/lib/hook'
-
+;``
 export default function Intro() {
   const { ref } = useSectionInView('Home')
 
