@@ -14,5 +14,5 @@ export function useSectionInView() {
     }
   }, [inView, setActiveSection, timeOfLastClick])
 
-  return { ref, inView }
+  return { ref }
 }
