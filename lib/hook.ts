@@ -3,10 +3,7 @@ import { useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 import type { SectionName } from './types'
 
-type useSectionInViewProps = {
-  sectionName: SectionName
-}
-export function useSectionInView({ sectionName }: useSectionInViewProps) {
+export function useSectionInView(sectionName: SectionName) {
   const { ref, inView } = useInView({
     threshold: 0.5,
   })
