@@ -9,13 +9,24 @@ import {
   VerticalTimelineElement,
 } from 'react-vertical-timeline-component'
 import 'react-vertical-timeline-component/style.min.css'
+import { experiencesData } from '@/lib/data'
 
 export default function Experience() {
   const { ref } = useSectionInView('Experience')
   return (
     <section id='experience' ref={ref}>
       <SectionHeading>My experience</SectionHeading>
-      <VerticalTimeline></VerticalTimeline>
+      <VerticalTimeline>
+        {experiencesData.map((item, index) => (
+          <React.Fragment key={index}>
+            <VerticalTimelineElement>
+              <h3>{item.title}</h3>
+              <p>{item.location}</p>
+              <p>{item.description}</p>
+            </VerticalTimelineElement>
+          </React.Fragment>
+        ))}
+      </VerticalTimeline>
     </section>
   )
 }
