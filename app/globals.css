@@ -5,3 +5,7 @@
 body {
   font-family: 'Bricolage Grotesque', sans-serif;
 }
+
+.borderBlack {
+  @apply border border-black/10;
+}
