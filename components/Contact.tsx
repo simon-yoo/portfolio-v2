@@ -33,9 +33,6 @@ export default function Contact() {
 
       <form
         action={async (formData) => {
-          console.log('Runnig on client')
-          console.log(formData.get('senderEmail'))
-          console.log(formData.get('message'))
           await sendEmail(formData)
         }}
         className='mt-8 flex flex-col '
