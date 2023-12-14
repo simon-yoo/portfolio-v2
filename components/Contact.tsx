@@ -1,20 +1,37 @@
+'use client'
+
 import React from 'react'
 import SectionHeading from './SectionHeading'
 import { FaPaperPlane } from 'react-icons/fa'
+import { motion } from 'framer-motion'
+import { useSectionInView } from '@/lib/hook'
 
 export default function Contact() {
+  const { ref } = useSectionInView('Contact')
+
   return (
-    <section id='contact' className='mb-20 sm:mb-28 w-[min(100% ,38rem)]'>
+    <motion.section
+      ref={ref}
+      id='contact'
+      className='mb-20 sm:mb-28 w-[min(100% ,38rem)] text-center'
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+    >
       <SectionHeading>Contact me</SectionHeading>
-      <p className='text-stone-600'>
+      <p className='text-stone-500 -mt-3'>
         Please contact me directly at{' '}
-        <a href='mailto:yoosghn0@gmail.com' className='underline'>
+        <a
+          href='mailto:yoosghn0@gmail.com'
+          className='underline text-stone-950'
+        >
           yoosghn0@gmail.com
-        </a>
+        </a>{' '}
         or through this form.
       </p>
 
-      <form action='' className='mt-10 flex flex-col '>
+      <form action='' className='mt-8 flex flex-col '>
         <input
           type='email'
           className='h-14 px-4 rounded-lg borderBlack'
@@ -34,6 +51,6 @@ export default function Contact() {
           <FaPaperPlane className='text-xs opacity-70 transition-all group-hover:translate-x-1 group-hover:-translate-y-1 ' />
         </button>
       </form>
-    </section>
+    </motion.section>
   )
 }
