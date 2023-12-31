@@ -21,11 +21,15 @@ export const sendEmail = async (formData: FormData) => {
     }
   }
 
-  resend.emails.send({
-    from: 'onboarding@resend.dev',
-    to: 'yoosghn0@gmail.com',
-    subject: 'Message from portfolio',
-    reply_to: senderEmail as string,
-    text: message as string,
-  })
+  try {
+    await resend.emails.send({
+      from: 'onboarding@resend.dev',
+      to: 'yoosghn0@gmail.com',
+      subject: 'Message from portfolio',
+      reply_to: senderEmail as string,
+      text: message as string,
+    })
+  } catch (error) {
+    console.log(error)
+  }
 }
