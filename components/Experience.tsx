@@ -3,7 +3,6 @@
 import { useSectionInView } from '@/lib/hook'
 import React from 'react'
 import SectionHeading from './SectionHeading'
-import { motion } from 'framer-motion'
 import {
   VerticalTimeline,
   VerticalTimelineElement,
