@@ -22,11 +22,11 @@ export default function Contact() {
       viewport={{ once: true }}
     >
       <SectionHeading>Contact me</SectionHeading>
-      <p className='text-stone-500 -mt-3'>
+      <p className='text-stone-500 -mt-3 dark:text-stone-400 dark:text-opacity-90'>
         Please contact me directly at{' '}
         <a
           href='mailto:yoosghn0@gmail.com'
-          className='underline text-stone-950'
+          className='underline text-stone-950 dark:text-stone-100 dark:text-opacity-90'
         >
           yoosghn0@gmail.com
         </a>{' '}
@@ -51,14 +51,14 @@ export default function Contact() {
           type='email'
           required
           maxLength={500}
-          className='h-14 px-4 rounded-lg borderBlack'
+          className='h-14 px-4 rounded-lg borderBlack dark:bg-stone-500 dark:text-stone-100 dark:text-opacity-90'
           placeholder='Your email'
         />
         <textarea
           name='message'
           required
           maxLength={5000}
-          className='h-52 my-3 rounded-lg borderBlack p-4'
+          className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-stone-500 dark:text-stone-100 dark:text-opacity-90'
           placeholder='Your message'
         />
         <SubmitBtn />
