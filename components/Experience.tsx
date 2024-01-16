@@ -38,7 +38,7 @@ export default function Experience() {
             >
               <h3 className='font-semibold capitalize'>{item.title}</h3>
               <p className='font-normal !mt-0'>{item.location}</p>
-              <p className='!mt-1 !font-normal text-stone-500'>
+              <p className='!mt-1 !font-normal text-stone-600'>
                 {item.description}
               </p>
             </VerticalTimelineElement>
