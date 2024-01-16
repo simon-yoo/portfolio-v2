@@ -51,14 +51,14 @@ export default function Contact() {
           type='email'
           required
           maxLength={500}
-          className='h-14 px-4 rounded-lg borderBlack dark:bg-stone-500 dark:text-stone-100 dark:text-opacity-90'
+          className='h-14 px-4 rounded-lg borderBlack bg-stone-100 outline-none focus:bg-white dark:bg-stone-300/20 dark:focus:bg-stone-300/30 dark:outline-none dark:text-stone-100 dark:text-opacity-90'
           placeholder='Your email'
         />
         <textarea
           name='message'
           required
           maxLength={5000}
-          className='h-52 my-3 rounded-lg borderBlack p-4 dark:bg-stone-500 dark:text-stone-100 dark:text-opacity-90'
+          className='h-52 my-3 rounded-lg borderBlack p-4 bg-stone-100 outline-none focus:bg-white dark:bg-stone-300/20 dark:focus:bg-stone-300/30 dark:outline-none dark:text-stone-100 dark:text-opacity-90'
           placeholder='Your message'
         />
         <SubmitBtn />
